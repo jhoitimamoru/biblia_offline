@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - Biblia Offline</title>
+    <title>Política de Privacidade - Bíblia ACF - Offline</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -41,16 +41,16 @@
     </style>
 </head>
 <body>
-    <h1>Política de Privacidade - Biblia Offline</h1>
-    <p class="date"><strong>Última atualização:</strong> 05 de Janeiro de 2026</p>
+    <h1>Política de Privacidade - Bíblia ACF - Offline</h1>
+    <p class="date"><strong>Última atualização:</strong> 11 de Janeiro de 2026</p>
 
     <h2>1. Introdução</h2>
     <p>
-        Bem-vindo ao <strong>Biblia Offline</strong>. Esta Política de Privacidade descreve como coletamos, 
-        usamos e protegemos suas informações ao usar nosso aplicativo de leitura bíblica.
+        Bem-vindo ao <strong>Bíblia ACF - Offline</strong>. Esta Política de Privacidade descreve como coletamos, 
+        usamos e protegemos suas informações ao usar nosso aplicativo de leitura bíblica com reflexões diárias.
     </p>
     <p>
-        Ao usar o Biblia Offline, você concorda com a coleta e uso de informações de acordo com esta política.
+        Ao usar o Bíblia ACF - Offline, você concorda com a coleta e uso de informações de acordo com esta política.
     </p>
 
     <h2>2. Informações que Coletamos</h2>
@@ -58,80 +58,146 @@
     <h3>2.1 Informações Armazenadas Localmente</h3>
     <ul>
         <li><strong>Progresso de Leitura:</strong> Capítulos e versículos lidos (armazenados localmente no seu dispositivo)</li>
-        <li><strong>Preferências:</strong> Configurações personalizadas do aplicativo</li>
+        <li><strong>Preferências:</strong> Configurações personalizadas do aplicativo (tema, tamanho da fonte, notificações)</li>
         <li><strong>Histórico:</strong> Registro de capítulos lidos e marcadores</li>
+        <li><strong>Favoritos:</strong> Versículos marcados como favoritos</li>
     </ul>
 
-    <h3>2.2 Informações NÃO Coletadas</h3>
+    <h3>2.2 Informações Coletadas por Anúncios (Google AdMob)</h3>
     <p>
-        Nosso aplicativo <strong>NÃO coleta, armazena ou compartilha</strong>:
+        O aplicativo exibe anúncios através do Google AdMob. O Google pode coletar:
     </p>
     <ul>
-        <li>❌ Dados pessoais (nome, email, telefone)</li>
+        <li><strong>Identificador de Publicidade:</strong> ID de anúncio do dispositivo (resettável nas configurações)</li>
+        <li><strong>Dados de Interação:</strong> Informações sobre interações com anúncios</li>
+        <li><strong>Informações do Dispositivo:</strong> Modelo, sistema operacional, operadora</li>
+        <li><strong>Dados de Uso:</strong> Tempo de uso do app para otimizar anúncios</li>
+    </ul>
+    <p>
+        <strong>Importante:</strong> Estes dados são coletados diretamente pelo Google AdMob, não por nós. 
+        Para mais informações, consulte a <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a>.
+    </p>
+
+    <h3>2.3 Informações NÃO Coletadas Diretamente por Nós</h3>
+    <p>
+        O aplicativo <strong>NÃO coleta, armazena ou compartilha diretamente</strong>:
+    </p>
+    <ul>
+        <li>❌ Dados pessoais identificáveis (nome, email, telefone)</li>
         <li>❌ Localização precisa ou aproximada</li>
         <li>❌ Dados de navegação externa</li>
-        <li>❌ Identificadores de publicidade</li>
-        <li>❌ Informações de contatos, fotos ou arquivos</li>
+        <li>❌ Informações de contatos, fotos ou arquivos pessoais</li>
+        <li>❌ Informações de pagamento</li>
     </ul>
+    <p>
+        <strong>Nota:</strong> Embora o app não colete identificadores de publicidade, o Google AdMob pode coletar 
+        esses dados para exibir anúncios relevantes.
+    </p>
 
     <h2>3. Como Usamos Suas Informações</h2>
     <p>As informações armazenadas localmente são usadas exclusivamente para:</p>
     <ul>
         <li>✅ Fornecer e manter o funcionamento do aplicativo</li>
         <li>✅ Salvar seu progresso de leitura</li>
-        <li>✅ Personalizar sua experiência</li>
+        <li>✅ Personalizar sua experiência (tema, tamanho da fonte)</li>
         <li>✅ Manter suas preferências e configurações</li>
+        <li>✅ Enviar notificações de lembretes diários (se habilitado)</li>
+        <li>✅ Fornecer leitura em áudio através de síntese de voz (TTS)</li>
     </ul>
     <p>
-        <strong>Importante:</strong> Todos os dados ficam apenas no seu dispositivo. 
-        Não enviamos informações para servidores externos.
+        <strong>Importante:</strong> Todos os dados de leitura e preferências ficam apenas no seu dispositivo. 
+        Não enviamos essas informações para servidores externos.
     </p>
+    
+    <h3>3.1 Anúncios</h3>
+    <p>
+        Utilizamos o Google AdMob para exibir anúncios no aplicativo. Os dados coletados pelo AdMob são 
+        usados para:
+    </p>
+    <ul>
+        <li>Exibir anúncios relevantes</li>
+        <li>Medir o desempenho dos anúncios</li>
+        <li>Prevenir fraudes</li>
+    </ul>
 
     <h2>4. Armazenamento de Dados</h2>
     <p>
-        A maior parte dos seus dados é armazenada <strong>localmente no seu dispositivo</strong>:
+        A maior parte dos seus dados é armazenada <strong>localmente no seu dispositivo</strong> usando SharedPreferences:
     </p>
     <ul>
-        <li>Progresso de leitura</li>
-        <li>Preferências do aplicativo</li>
+        <li>Progresso de leitura e estatísticas</li>
+        <li>Preferências do aplicativo (tema, fonte, notificações)</li>
         <li>Histórico de capítulos lidos</li>
+        <li>Marcadores e versículos favoritos</li>
+        <li>Configurações de áudio (velocidade de leitura TTS)</li>
     </ul>
     <p>
         <strong>Esses dados NÃO são enviados para nossos servidores</strong> e permanecem exclusivamente no seu dispositivo.
+        Ao desinstalar o aplicativo, todos esses dados são automaticamente removidos.
     </p>
 
     <h2>5. Compartilhamento de Dados</h2>
     <p>
         Nós <strong>NÃO coletamos, NÃO vendemos e NÃO compartilhamos</strong> suas informações pessoais 
-        com terceiros.
+        diretamente com terceiros.
     </p>
     <p>
-        Todos os dados permanecem exclusivamente no seu dispositivo e sob seu controle.
+        No entanto, utilizamos serviços de terceiros que podem coletar dados:
+    </p>
+    <ul>
+        <li><strong>Google AdMob:</strong> Para exibição de anúncios. Consulte a 
+        <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidade do Google</a></li>
+        <li><strong>Flutter TTS:</strong> Usa os serviços de síntese de voz do sistema operacional do seu dispositivo 
+        para leitura em áudio (processamento local, sem envio de dados)</li>
+    </ul>
+    <p>
+        Todos os dados de leitura e preferências permanecem exclusivamente no seu dispositivo e sob seu controle.
     </p>
 
     <h2>6. Seus Direitos e Controle</h2>
     <p>Você tem controle total sobre seus dados:</p>
     <ul>
-        <li>✅ <strong>Acessar:</strong> Todos os dados estão no seu dispositivo</li>
-        <li>✅ <strong>Modificar:</strong> Altere suas preferências a qualquer momento no app</li>
+        <li>✅ <strong>Acessar:</strong> Todos os dados de leitura estão armazenados localmente no seu dispositivo</li>
+        <li>✅ <strong>Modificar:</strong> Altere suas preferências a qualquer momento nas configurações do app</li>
         <li>✅ <strong>Excluir:</strong> Desinstalar o aplicativo remove todos os dados locais automaticamente</li>
-        <li>✅ <strong>Controle Total:</strong> Nenhum dado é enviado para servidores externos</li>
+        <li>✅ <strong>Controlar Anúncios:</strong> Você pode redefinir o ID de publicidade nas configurações do seu dispositivo</li>
+        <li>✅ <strong>Notificações:</strong> Pode ativar/desativar notificações a qualquer momento nas configurações</li>
     </ul>
+    <p>
+        Para gerenciar como o Google usa seus dados para anúncios, visite as 
+        <a href="https://adssettings.google.com" target="_blank">Configurações de Anúncios do Google</a>.
+    </p>
 
-    <h2>7. Segurança</h2>
+    <h2>7. Permissões do Aplicativo</h2>
+    <p>
+        O aplicativo solicita as seguintes permissões:
+    </p>
+    <ul>
+        <li><strong>Internet:</strong> Necessária para carregar anúncios do Google AdMob</li>
+        <li><strong>Notificações:</strong> Para enviar lembretes diários de leitura (opcional, pode ser desativado)</li>
+        <li><strong>Acesso à rede:</strong> Para verificar status da conexão e carregar anúncios</li>
+    </ul>
+    <p>
+        <strong>Nota:</strong> O aplicativo funciona completamente offline para leitura da Bíblia. 
+        A conexão à internet é usada apenas para anúncios.
+    </p>
+
+    <h2>8. Segurança</h2>
     <p>
         Implementamos medidas de segurança para proteger suas informações, incluindo:
     </p>
     <ul>
-        <li>Armazenamento criptografado local</li>
-        <li>Uso de conexões seguras (HTTPS)</li>
-        <li>Conformidade com políticas do Google Play</li>
+        <li>Armazenamento local seguro através de SharedPreferences</li>
+        <li>Uso de conexões seguras (HTTPS) para carregamento de anúncios</li>
+        <li>Conformidade com as políticas do Google Play</li>
+        <li>Nenhum servidor próprio para armazenamento de dados</li>
+        <li>Minimização de coleta de dados</li>
     </ul>
     <p>
-        No entanto, nenhum método de transmissão pela Internet é 100% seguro.
+        No entanto, nenhum método de armazenamento eletrônico ou transmissão pela Internet é 100% seguro.
     </p>
 
-    <h2>8. Privacidade de Crianças</h2>
+    <h2>9. Privacidade de Crianças</h2>
     <p>
         Nosso aplicativo é adequado para todas as idades, incluindo crianças menores de 13 anos. 
         <strong>NÃO coletamos intencionalmente informações pessoais de crianças.</strong>
@@ -141,24 +207,24 @@
         entre em contato conosco para que possamos tomar as medidas necessárias.
     </p>
 
-    <h2>9. Links Externos e Doações</h2>
+    <h2>10. Links Externos e Doações</h2>
     <p>
-        Nosso aplicativo pode conter links para plataformas de doação externas (como Mercado Pago). 
-        Quando você clica nesses links, é redirecionado para sites de terceiros que possuem suas 
-        próprias políticas de privacidade.
+        Nosso aplicativo pode conter links para plataformas de doação externas (como Mercado Pago) 
+        e links para a Política de Privacidade do Google. Quando você clica nesses links, é redirecionado 
+        para sites de terceiros que possuem suas próprias políticas de privacidade.
     </p>
     <p>
         <strong>Importante:</strong> Não coletamos informações de pagamento. Todas as transações 
-        são processadas diretamente pelas plataformas de pagamento.
+        são processadas diretamente pelas plataformas de pagamento externas.
     </p>
 
-    <h2>10. Alterações a Esta Política</h2>
+    <h2>11. Alterações a Esta Política</h2>
     <p>
         Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos você de 
         quaisquer mudanças publicando a nova política nesta página e atualizando a "Data da última atualização".
     </p>
 
-    <h2>11. Contato</h2>
+    <h2>12. Contato</h2>
     <p>
         Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato:
     </p>
@@ -166,38 +232,48 @@
         <li><strong>Email:</strong> jhoitimamoru@gmail.com</li>
     </ul>
 
-    <h2>12. Consentimento</h2>
+    <h2>13. Consentimento</h2>
     <p>
-        Resumo - Informações para Play Store</h2>
+        Ao usar o Bíblia ACF - Offline, você consente com esta Política de Privacidade e concorda com seus termos.
+    </p>
+
+    <div class="highlight">
+        <h2>📱 Resumo - Informações para Play Store</h2>
     
-    <h3>✅ O que o app FAZ:</h3>
-    <ul>
-        <li>Armazena progresso de leitura localmente</li>
-        <li>Salva preferências do usuário no dispositivo</li>
-        <li>Funciona 100% offline</li>
-        <li>Permite doações voluntárias via links externos</li>
-    </ul>
+        <h3>✅ O que o app FAZ:</h3>
+        <ul>
+            <li>Armazena progresso de leitura localmente</li>
+            <li>Salva preferências do usuário no dispositivo (tema, fonte, notificações)</li>
+            <li>Funciona 100% offline para leitura bíblica</li>
+            <li>Exibe anúncios através do Google AdMob</li>
+            <li>Envia notificações de lembretes diários (se habilitado)</li>
+            <li>Oferece leitura em áudio com síntese de voz (TTS)</li>
+            <li>Permite compartilhamento de versículos</li>
+            <li>Permite doações voluntárias via links externos</li>
+        </ul>
 
-    <h3>❌ O que o app NÃO FAZ:</h3>
-    <ul>
-        <li>NÃO coleta dados pessoais</li>
-        <li>NÃO envia informações para servidores</li>
-        <li>NÃO exibe anúncios</li>
-        <li>NÃO rastreia localização</li>
-        <li>NÃO compartilha dados com terceiros</li>
-    </ul>
+        <h3>❌ O que o app NÃO FAZ:</h3>
+        <ul>
+            <li>NÃO coleta dados pessoais identificáveis (nome, email, telefone)</li>
+            <li>NÃO envia dados de leitura para servidores externos</li>
+            <li>NÃO rastreia localização precisa ou aproximada</li>
+            <li>NÃO acessa contatos, fotos ou arquivos pessoais</li>
+            <li>NÃO coleta informações de pagamento</li>
+        </ul>
 
-    <h3>🔒 Segurança:</h3>
-    <ul>
-        <li>Todos os dados ficam no dispositivo do usuário</li>
-        <li>Desinstalar o app remove todos os dados</li>
-        <li>Sem servidores externos = sem risco de vazamento
-    </ul>
+        <h3>🔒 Segurança:</h3>
+        <ul>
+            <li>Todos os dados de leitura e preferências ficam no dispositivo do usuário</li>
+            <li>Desinstalar o app remove todos os dados automaticamente</li>
+            <li>Sem servidores próprios para armazenar dados pessoais</li>
+        </ul>
 
-    <h3>Compartilhamento:</h3>
-    <ul>
-        <li>Compartilhamos apenas com Google AdMob para publicidade</li>
-    </ul>
+        <h3>📢 Compartilhamento de Dados:</h3>
+        <ul>
+            <li><strong>Google AdMob:</strong> Coleta dados de anúncios (ID de publicidade, modelo do dispositivo, dados de interação)</li>
+            <li><strong>Nenhum outro terceiro:</strong> Não compartilhamos seus dados de leitura com ninguém</li>
+        </ul>
+    </div>
 
     <hr style="margin: 40px 0; border: 1px solid #ddd;">
 
